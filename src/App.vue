@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <!--Mavluda part -->
+    <Navbar/>
+    <Header/>
+    <About/>
+    <FeaturesAndStatistics/>
+
+    <!--Anora part -->
+    <Services/>
+    <Instructions/>
+    <Results/>
+    <Footer/>
+
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
+// Mavluda part
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
+import FeaturesAndStatistics from "./components/FeaturesAndStatistics";
+
+// Anora part
+import Services from "./components/Services";
+import Instructions from "./components/Instructions";
+import Results from "./components/Results";
+import Footer from "./components/Footer";
+
 
 export default {
   name: "App",
+
   components: {
-    HelloWorld
-  }
+    Navbar,
+    Header,
+    About,
+    FeaturesAndStatistics,
+    Services,
+    Instructions,
+    Results,
+    Footer
+  },
+
+  data (){
+    //
+  } 
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
