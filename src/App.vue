@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <!--Mavluda part -->
+    <Preloader />
     <Navbar/>
     <Header/>
     <About/>
@@ -28,12 +29,14 @@ import Services from "./components/Services";
 import Instructions from "./components/Instructions";
 import Results from "./components/Results";
 import Footer from "./components/Footer";
+import Preloader from './components/PageLoader';
 
 
 export default {
   name: "App",
 
   components: {
+    Preloader,
     Navbar,
     Header,
     About,
