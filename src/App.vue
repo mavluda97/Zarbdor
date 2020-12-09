@@ -6,11 +6,7 @@
     <Header/>
     <About/>
     <FeaturesAndStatistics/>
-    <Navbar />
-    <Header />
-    <About />
-    <FeaturesAndStatistics />
-
+  
     <!--Anora part -->
     <Services />
     <Instructions />
