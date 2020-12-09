@@ -1,5 +1,5 @@
 <template>
-  <div class="header-container pa-15">
+  <div class="header-container pa-15" id="main">
     <div class="ma-15 d-flex justify-end">
       <img
         src="../assets/rasm.png"
@@ -21,8 +21,8 @@
         style="color: #2b85c5; position: relative; z-index: 32"
         class="mt-10 mb-10 p-style"
       >
-        Sizning muammo va takliflaringizni Zarbdor tuman hokimiyatiga
-        yetkazishga va uning yechimini topishga mo’ljallangan
+        Sizning muammo va takliflaringizni Zarbdor tuman hokimiyatiga yetkazishga va uning
+        yechimini topishga mo’ljallangan
       </p>
       <v-btn
         style="position: relative; z-index: 34"
@@ -32,12 +32,7 @@
         class="white--text text-capitalize"
         ><v-icon left>mdi-google-play</v-icon>Google Play</v-btn
       >
-      <img
-        class="shapes"
-        src="../assets/shapes.svg"
-        alt="shapes"
-        height="60%"
-      />
+      <img class="shapes" src="../assets/shapes.svg" alt="shapes" height="60%" />
     </div>
   </div>
 </template>

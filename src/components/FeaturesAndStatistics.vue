@@ -1,32 +1,32 @@
 <template>
-<div class="outer-container">
-  <div class="common-container mb-16">
-    <div class="up-container pa-5 pb-16">
-      <h1 class="text-uppercase display-1 font-weight-bold ma-10 white--text">
-        Afzalliklar
-      </h1>
-      <div class="feature-container ma-10">
-        <div v-for="value in Features" :key="value.index" class="feature-lists">
-          <v-icon class="ma-5 white--text features-icons" x-large>{{
-            value[2]
-          }}</v-icon>
-          <h3 class="mx-5 white--text font-weight-bold">
-            {{ value[0] }}
-          </h3>
-          <p class="ma-5 white--text">
-            {{ value[1] }}
-          </p>
+  <div class="outer-container" id="features">
+    <div class="common-container mb-16">
+      <div class="up-container pa-5 pb-16">
+        <h1 class="text-uppercase display-1 font-weight-bold ma-10 white--text">
+          Afzalliklar
+        </h1>
+        <div class="feature-container ma-10">
+          <div v-for="value in Features" :key="value.index" class="feature-lists">
+            <v-icon class="ma-5 white--text features-icons" x-large>{{
+              value[2]
+            }}</v-icon>
+            <h3 class="mx-5 white--text font-weight-bold">
+              {{ value[0] }}
+            </h3>
+            <p class="ma-5 white--text">
+              {{ value[1] }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="down-container pa-5">
+        <div v-for="(value, name) in datas" :key="name.index">
+          <p class="display-2 white--text text-center">{{ value }}</p>
+          <p class="white--text text-center font-weight-light">{{ name }}</p>
         </div>
       </div>
     </div>
-    <div class="down-container pa-5">
-      <div v-for="(value, name) in datas" :key="name.index">
-        <p class="display-2 white--text text-center">{{ value }}</p>
-        <p class="white--text text-center font-weight-light">{{ name }}</p>
-      </div>
-    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -69,7 +69,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .common-container {
@@ -141,7 +140,6 @@ export default {
   .features-icons {
     display: none;
   }
-
 }
 
 @media (min-width: 501px) and (max-width: 850px) {
@@ -156,58 +154,51 @@ export default {
     height: 600px;
     grid-template-columns: auto;
   }
-  
 }
 
-
-.outer-container{
+.outer-container {
   height: 800px;
 }
 
-@media(min-width: 671px)and (max-width:680px){
-  .outer-container{
+@media (min-width: 671px) and (max-width: 680px) {
+  .outer-container {
     height: 800px;
   }
 }
 
-@media(min-width: 636px)and (max-width:670px){
-  .outer-container{
+@media (min-width: 636px) and (max-width: 670px) {
+  .outer-container {
     height: 850px;
   }
 }
 
-
-@media(min-width: 501px) and (max-width: 635px){
-  .outer-container{
+@media (min-width: 501px) and (max-width: 635px) {
+  .outer-container {
     height: 1000px;
   }
 }
 
-@media  (min-width: 408px ) and (max-width: 500px){
-  .outer-container{
+@media (min-width: 408px) and (max-width: 500px) {
+  .outer-container {
     height: 1600px;
   }
 }
 
-
-@media  (min-width: 360px)  and (max-width: 407px){
-    .outer-container{
+@media (min-width: 360px) and (max-width: 407px) {
+  .outer-container {
     height: 1800px;
   }
 }
 
-@media  (min-width: 305px)  and (max-width: 359px){
-    .outer-container{
+@media (min-width: 305px) and (max-width: 359px) {
+  .outer-container {
     height: 2000px;
   }
 }
 
-@media  (max-width: 304px){
-    .outer-container{
+@media (max-width: 304px) {
+  .outer-container {
     height: 2200px;
   }
 }
-
-
-
 </style>

@@ -8,16 +8,17 @@
     >
     <div class="navbar-links" v-bind:class="{ active: isActive }">
       <ul>
-        <li><a href="">Asosiy</a></li>
-        <li><a href="">Ilova haqida</a></li>
-        <li><a href="">Afzalliklar</a></li>
-        <li><a href="">Statistika</a></li>
-        <li><a href="">Qo'llanma</a></li>
+        <li><a href="#main" @click.prevent="navbarLinkClick()">Asosiy</a></li>
+        <li><a href="#about" @click.prevent="navbarLinkClick()">Ilova haqida</a></li>
         <li>
-          <v-btn
-            rounded
-            color="#2B85C5"
-            class="white--text ma-2 text-capitalize"
+          <a href="#features" @click.prevent="navbarLinkClick()">Afzalliklar</a>
+        </li>
+        <li>
+          <a href="#features" @click.prevent="navbarLinkClick()">Statistika</a>
+        </li>
+        <li><a href="#guide" @click.prevent="navbarLinkClick()">Qo'llanma</a></li>
+        <li>
+          <v-btn rounded color="#2B85C5" class="white--text ma-2 text-capitalize"
             >Kirish</v-btn
           >
         </li>
@@ -45,6 +46,15 @@ export default {
 
     toggleButton() {
       this.isActive = !this.isActive;
+    },
+
+    // Scroll to section on link click
+    navbarLinkClick() {
+      const targetId = event.currentTarget.getAttribute("href");
+      document.querySelector(targetId).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     },
   },
 };
