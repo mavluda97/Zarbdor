@@ -36,11 +36,13 @@
 </template>
 
 <script>
+import Categories from "../services/Categories";
 export default {
   name: "FeaturesAndStatistics",
 
   data() {
     return {
+      base: process.env.VUE_APP_BASE_URL,
       Features: {
         one: [
           "Muammoning tezkor yechimi",
@@ -72,6 +74,30 @@ export default {
         Average: 14,
       },
     };
+  },
+
+  methods: {
+    getReports() {
+      Categories.getStats()
+        .then((res) => {
+          this.datas.Problems = res.data.all;
+          this.datas.Viewed = res.data.reviewed;
+          this.datas.Solved = res.data.closed;
+          this.datas.Rejected = res.data.rejected;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+    getTime() {
+      Categories.getTime().then((res) => {
+        this.datas.Average = res.data.avgTime;
+      });
+    },
+  },
+  created() {
+    this.getReports();
+    this.getTime();
   },
 };
 </script>

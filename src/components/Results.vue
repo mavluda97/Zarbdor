@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div v-if="slides.length > 0" class="container">
     <div>
       <h1
         class="text-uppercase display-1 font-weight-bold ma-5"
@@ -17,18 +17,27 @@
           cycle
           pa-10
         >
-          <v-carousel-item class="slider-content">
+          <v-carousel-item
+            v-for="slide in slides"
+            :key="slide.id"
+            class="slider-content"
+          >
             <div class="slider-photos">
               <div class="results-txt">
                 <div class="res-title">Muammo</div>
                 <p>
-                  Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan
-                  tozalashga yordam bering
+                  {{ slide.comments[0].text }}
                 </p>
               </div>
               <div class="ba-image">
                 <div class="sticker">Before</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
+                <v-img
+                  :src="slide.comments[0].image.imageUrl"
+                  :lazy-src="base_url + slide.comments[0].image.imageUrl"
+                  height="100%"
+                  width="auto"
+                  :alt="slide.comments[0].image.imageUrl"
+                />
               </div>
             </div>
 
@@ -36,100 +45,16 @@
               <div class="results-txt">
                 <div class="res-title">Yechim</div>
                 <p>
-                  - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан
-                  Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди
+                  {{ slide.comments[1].text }}
                 </p>
               </div>
               <div class="ba-image">
                 <div class="sticker">After</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item class="slider-content">
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Muammo</div>
-                <p>
-                  Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan
-                  tozalashga yordam bering
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">Before</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Yechim</div>
-                <p>
-                  - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан
-                  Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">After</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item class="slider-content">
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Muammo</div>
-                <p>
-                  Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan
-                  tozalashga yordam bering
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">Before</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Yechim</div>
-                <p>
-                  - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан
-                  Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">After</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item class="slider-content">
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Muammo</div>
-                <p>
-                  Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan
-                  tozalashga yordam bering
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">Before</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
-              </div>
-            </div>
-
-            <div class="slider-photos">
-              <div class="results-txt">
-                <div class="res-title">Yechim</div>
-                <p>
-                  - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан
-                  Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди
-                </p>
-              </div>
-              <div class="ba-image">
-                <div class="sticker">After</div>
-                <img src="../assets/problem.png" height="100%" width="auto" />
+                <v-img
+                  :src="base_url + slide.comments[1].image.imageUrl"
+                  height="100%"
+                  width="auto"
+                />
               </div>
             </div>
           </v-carousel-item>
@@ -140,10 +65,15 @@
 </template>
 
 <script>
+import Categories from "../services/Categories";
+
 export default {
   name: "Results",
   data() {
     return {
+      base: process.env.VUE_APP_BASE_URL,
+      base_url: process.env.VUE_APP_VARIABLE,
+
       colors: [
         "indigo",
         "warning",
@@ -151,8 +81,23 @@ export default {
         "red lighten-1",
         "deep-purple accent-4",
       ],
-      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+      slides: [],
+      // slides: ["First", "Second", "Third", "Fourth", "Fifth"]
     };
+  },
+  methods: {
+    getResults() {
+      Categories.getResults()
+        .then((res) => {
+          this.slides = res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+  created() {
+    this.getResults();
   },
 };
 </script>
