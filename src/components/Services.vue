@@ -1,7 +1,7 @@
 <template >
   <div class="service-container pa-15">
     <h1
-      class="text-uppercase display-1 font-weight-bold ma-5"
+      class="text-uppercase display-1 font-weight-bold ma-16"
       style="color: #19d3cc"
     >
       Hizmat turlari

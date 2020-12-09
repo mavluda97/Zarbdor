@@ -26,7 +26,9 @@
       <div class="down-container pa-5">
         <div v-for="(value, name) in datas" :key="name.index">
           <p class="display-2 white--text text-center">{{ value }}</p>
-          <p class="white--text text-center font-weight-light">{{ name }}</p>
+          <p class="white--text text-center font-weight-light">
+            {{ $t(name) }}
+          </p>
         </div>
       </div>
     </div>
@@ -42,22 +44,22 @@ export default {
       Features: {
         one: [
           "Muammoning tezkor yechimi",
-          "Muammoni suratga oling! Tizim orqali sizning sorovingiz qabul qilingani yoki ishlash jarayonida ekanligi togrisida nazorat o'rnating",
+          "Ushbu ilova orqali fuqarolar o'z murojaatlarini tez va oson yo'llaydilar. Qisqa muddat ichida muammolar hal qilinadi",
           "mdi-laptop-mac",
         ],
         two: [
           "Mutasaddi tashkilotlar bilan to'g'ridan to'g'ri muloqot",
-          "Muammoni suratga oling! Tizim orqali sizning sorovingiz qabul qilingani yoki ishlash jarayonida ekanligi togrisida nazorat o'rnating",
+          "Fuqarolarning murojaatlari to'g'ridan to'g'ri mutassadi tashkilotlarga yuboriladi va ular zudlik bilan mazkur muammolar yechimi bilan shug'ullanadilar. ",
           "mdi-laptop-mac",
         ],
         three: [
           "Muammolar yechilishi ustidan online nazorat",
-          "Muammoni suratga oling! Tizim orqali sizning sorovingiz qabul qilingani yoki ishlash jarayonida ekanligi togrisida nazorat o'rnating",
+          "Fuqarolar nafaqat o'z murojatlarini yuborishi, balki endilikda ular ham muammolarning hal bo'lish jarayonini online nazorat qila olashi mumkin",
           "mdi-laptop-mac",
         ],
         four: [
           "Murojaatlarni yetqazish uchun qulay tizim",
-          "Muammoni suratga oling! Tizim orqali sizning sorovingiz qabul qilingani yoki ishlash jarayonida ekanligi togrisida nazorat o'rnating",
+          "Ushbu ilova orqali murojaatlarning yuborilishi juda qulay bo'lganligi uchun fuqarolar endi hech qanday navbat kutmaydilar, ortiqcha ovoragarchiliklar ularni be'zovta qilmaydi.",
           "mdi-laptop-mac",
         ],
       },

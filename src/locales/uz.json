@@ -1,5 +1,9 @@
 {
   "Login": "Kirish",
+  "Problems": "Murojaatlar",
+  "Rejected": "Rad etilgan",
+  "Solved": "Hal etilgan",
+  "Viewed": "Ko'rilgan",
   "about": "Ilova haqida",
   "features": "Afzalliklar",
   "guide": "Qo'llanma",
