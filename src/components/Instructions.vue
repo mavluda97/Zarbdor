@@ -1,22 +1,25 @@
 <template>
   <div class="container" id="guide">
     <div>
-      <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+      <h1
+        class="text-uppercase display-1 font-weight-bold ma-5"
+        style="color: #19d3cc"
+      >
         Qo'llanma
       </h1>
     </div>
     <v-item-group>
       <v-container>
         <v-row>
-          <v-col v-for="instruction in Instructions" :key="instruction" cols="12" md="4">
+          <v-col v-for="i in Instructions" :key="i.index" cols="12" md="4">
             <div class="instruction-cards">
               <div class="rounded-cards">
-                <img :src="instruction.img" alt="" />
+                <img src="../assets/pic1.png" alt="pic" />
               </div>
             </div>
             <div class="instruction-txt">
               <div>
-                {{ instruction.name }}
+                {{ i[0] }}
               </div>
             </div>
           </v-col>
@@ -32,20 +35,11 @@ export default {
 
   data() {
     return {
-      Instructions: [
-        {
-          img: "../assets/image6.png",
-          name: "1. Muammoni suratga oling!",
-        },
-        {
-          img: "../assets/image7.png",
-          name: "2. Rasmga olingan fotoga izoh qoldiring.",
-        },
-        {
-          img: "../assets/image8.png",
-          name: "3. Natijalarni kuzatib boring",
-        },
-      ],
+      Instructions: {
+        one: ["1.Muammoni suratga oling!", "../assets/pic1.png"],
+        two: ["2.Rasmga olingan fotoga izoh qoldiring.", "../assets/pic2.png"],
+        three: ["3.Natijalarni kuzatib boring", "../assets/pic3.png"],
+      },
     };
   },
 };

@@ -2,11 +2,11 @@
   <v-app style="background-color: #e5e5e5">
     <!--Mavluda part -->
     <Preloader />
-    <Navbar/>
-    <Header/>
-    <About/>
-    <FeaturesAndStatistics/>
-  
+    <Navbar />
+    <Header />
+    <About />
+    <FeaturesAndStatistics />
+
     <!--Anora part -->
     <Services />
     <Instructions />
@@ -27,7 +27,7 @@ import Services from "./components/Services";
 import Instructions from "./components/Instructions";
 import Results from "./components/Results";
 import Footer from "./components/Footer";
-import Preloader from './components/PageLoader';
+import Preloader from "./components/PageLoader";
 
 export default {
   name: "App",
@@ -45,7 +45,7 @@ export default {
   },
 
   data() {
-    //
+    return {};
   },
 };
 </script>

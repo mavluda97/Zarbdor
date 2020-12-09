@@ -9,13 +9,19 @@
     <div class="navbar-links" v-bind:class="{ active: isActive }">
       <ul>
         <li>
-          <a href="#main" @click.prevent="navbarLinkClick()">{{ $t("main") }}</a>
+          <a href="#main" @click.prevent="navbarLinkClick()">{{
+            $t("main")
+          }}</a>
         </li>
         <li>
-          <a href="#about" @click.prevent="navbarLinkClick()">{{ $t("about") }}</a>
+          <a href="#about" @click.prevent="navbarLinkClick()">{{
+            $t("about")
+          }}</a>
         </li>
         <li>
-          <a href="#features" @click.prevent="navbarLinkClick()">{{ $t("features") }}</a>
+          <a href="#features" @click.prevent="navbarLinkClick()">{{
+            $t("features")
+          }}</a>
         </li>
         <li>
           <a href="#features" @click.prevent="navbarLinkClick()">{{
@@ -23,15 +29,22 @@
           }}</a>
         </li>
         <li>
-          <a href="#guide" @click.prevent="navbarLinkClick()">{{ $t("guide") }}</a>
+          <a href="#guide" @click.prevent="navbarLinkClick()">{{
+            $t("guide")
+          }}</a>
         </li>
         <li>
-          <v-btn rounded color="#2B85C5" class="white--text ma-2 text-capitalize">{{
-            $t("Login")
-          }}</v-btn>
+          <v-btn
+            rounded
+            color="#2B85C5"
+            class="white--text ma-2 text-capitalize"
+            >{{ $t("Login") }}</v-btn
+          >
         </li>
         <li class="lang">
-          <a href="#" @click="setLocale('uz')">Uz</a>|<a href="#" @click="setLocale('ru')"
+          <a href="#" @click="setLocale('uz')">Uz</a>|<a
+            href="#"
+            @click="setLocale('ru')"
             >Ru</a
           >
         </li>
@@ -61,9 +74,9 @@ export default {
 
   methods: {
     setLocale(locale) {
+      window.location.reload();
       this.$i18n.locale = locale;
       localStorage.setItem("locale", locale);
-      window.location.reload();
     },
 
     toggleButton() {

@@ -6,7 +6,11 @@
           Afzalliklar
         </h1>
         <div class="feature-container ma-10">
-          <div v-for="value in Features" :key="value.index" class="feature-lists">
+          <div
+            v-for="value in Features"
+            :key="value.index"
+            class="feature-lists"
+          >
             <v-icon class="ma-5 white--text features-icons" x-large>{{
               value[2]
             }}</v-icon>

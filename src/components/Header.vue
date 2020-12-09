@@ -21,8 +21,8 @@
         style="color: #2b85c5; position: relative; z-index: 32"
         class="mt-10 mb-10 p-style"
       >
-        Sizning muammo va takliflaringizni Zarbdor tuman hokimiyatiga yetkazishga va uning
-        yechimini topishga mo’ljallangan
+        Sizning muammo va takliflaringizni Zarbdor tuman hokimiyatiga
+        yetkazishga va uning yechimini topishga mo’ljallangan
       </p>
       <v-btn
         style="position: relative; z-index: 34"
