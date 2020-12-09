@@ -1,23 +1,25 @@
 <template>
-  <v-app>
+  <v-app style="background-color: #e5e5e5">
     <!--Mavluda part -->
     <Preloader />
     <Navbar/>
     <Header/>
     <About/>
     <FeaturesAndStatistics/>
+    <Navbar />
+    <Header />
+    <About />
+    <FeaturesAndStatistics />
 
     <!--Anora part -->
-    <Services/>
-    <Instructions/>
-    <Results/>
-    <Footer/>
-
+    <Services />
+    <Instructions />
+    <Results />
+    <Footer />
   </v-app>
 </template>
 
 <script>
-
 // Mavluda part
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -31,7 +33,6 @@ import Results from "./components/Results";
 import Footer from "./components/Footer";
 import Preloader from './components/PageLoader';
 
-
 export default {
   name: "App",
 
@@ -44,11 +45,13 @@ export default {
     Services,
     Instructions,
     Results,
-    Footer
+    Footer,
   },
 
-  data (){
+  data() {
     //
-  } 
+  },
 };
 </script>
+
+

@@ -1,8 +1,10 @@
 <template >
-    <div class="container" >
-           <div class="title">
-       Xizmat turlari
-        </div>
+    <div class="service-container pa-15" >
+        <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+          Hizmat turlari
+         </h1>
+
+    
         <v-sheet
             class="mx-auto"
             max-width="100%"
@@ -10,6 +12,7 @@
             >
          
             <v-slide-group
+                 style="background-color: #e5e5e5"
                 show-arrows
                 height="205"
                 center-active
@@ -55,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.service-container{
     width: 100%;
     margin-bottom: 80px;
 }
