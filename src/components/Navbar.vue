@@ -8,21 +8,33 @@
     >
     <div class="navbar-links" v-bind:class="{ active: isActive }">
       <ul>
-        <li><a href="#main" @click.prevent="navbarLinkClick()">Asosiy</a></li>
-        <li><a href="#about" @click.prevent="navbarLinkClick()">Ilova haqida</a></li>
         <li>
-          <a href="#features" @click.prevent="navbarLinkClick()">Afzalliklar</a>
+          <a href="#main" @click.prevent="navbarLinkClick()">{{ $t("main") }}</a>
         </li>
         <li>
-          <a href="#features" @click.prevent="navbarLinkClick()">Statistika</a>
+          <a href="#about" @click.prevent="navbarLinkClick()">{{ $t("about") }}</a>
         </li>
-        <li><a href="#guide" @click.prevent="navbarLinkClick()">Qo'llanma</a></li>
         <li>
-          <v-btn rounded color="#2B85C5" class="white--text ma-2 text-capitalize"
-            >Kirish</v-btn
+          <a href="#features" @click.prevent="navbarLinkClick()">{{ $t("features") }}</a>
+        </li>
+        <li>
+          <a href="#features" @click.prevent="navbarLinkClick()">{{
+            $t("statistics")
+          }}</a>
+        </li>
+        <li>
+          <a href="#guide" @click.prevent="navbarLinkClick()">{{ $t("guide") }}</a>
+        </li>
+        <li>
+          <v-btn rounded color="#2B85C5" class="white--text ma-2 text-capitalize">{{
+            $t("Login")
+          }}</v-btn>
+        </li>
+        <li class="lang">
+          <a href="#" @click="setLocale('uz')">Uz</a>|<a href="#" @click="setLocale('ru')"
+            >Ru</a
           >
         </li>
-        <li class="lang"><a href="#">Uz</a>|<a href="#">Ru</a></li>
       </ul>
     </div>
   </nav>
@@ -31,6 +43,15 @@
 <script>
 export default {
   name: "Navbar",
+
+  created() {
+    const locale = localStorage.getItem("locale");
+    if (locale) {
+      this.$i18n.locale = locale;
+    } else if (navigator.language) {
+      this.$i18n.locale = navigator.language.substring(0, 2);
+    }
+  },
 
   data() {
     return {
@@ -42,6 +63,7 @@ export default {
     setLocale(locale) {
       this.$i18n.locale = locale;
       localStorage.setItem("locale", locale);
+      window.location.reload();
     },
 
     toggleButton() {

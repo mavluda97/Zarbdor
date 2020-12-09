@@ -157,48 +157,66 @@ export default {
 }
 
 .outer-container {
-  height: 800px;
+  height: 900px;
 }
 
 @media (min-width: 671px) and (max-width: 680px) {
-  .outer-container {
-    height: 800px;
-  }
-}
-
-@media (min-width: 636px) and (max-width: 670px) {
   .outer-container {
     height: 850px;
   }
 }
 
-@media (min-width: 501px) and (max-width: 635px) {
+@media (min-width: 636px) and (max-width: 670px) {
+  .outer-container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 542px) and (max-width: 635px) {
   .outer-container {
     height: 1000px;
   }
 }
 
-@media (min-width: 408px) and (max-width: 500px) {
+@media (min-width: 501px) and (max-width: 541px) {
+  .outer-container {
+    height: 1100px;
+  }
+}
+
+@media (min-width: 409px) and (max-width: 500px) {
   .outer-container {
     height: 1600px;
   }
 }
 
-@media (min-width: 360px) and (max-width: 407px) {
+@media (min-width: 377px) and (max-width: 408px) {
   .outer-container {
     height: 1800px;
   }
 }
 
-@media (min-width: 305px) and (max-width: 359px) {
+@media (min-width: 345px) and (max-width: 376px) {
   .outer-container {
-    height: 2000px;
+    height: 1900px;
   }
 }
 
-@media (max-width: 304px) {
+@media (min-width: 302px) and (max-width: 344px) {
   .outer-container {
-    height: 2200px;
+    height: 2100px;
+  }
+}
+
+@media (max-width: 301px) {
+  .outer-container {
+    height: 2400px;
+  }
+}
+
+@media (max-width: 285px) {
+  .outer-container {
+    height: 2500px;
   }
 }
 </style>

@@ -32,7 +32,7 @@
         class="white--text text-capitalize"
         ><v-icon left>mdi-google-play</v-icon>Google Play</v-btn
       >
-      <img class="shapes" src="../assets/shapes.svg" alt="shapes" height="60%" />
+      <img class="shapes" src="../assets/shapes.svg" alt="shapes" />
     </div>
   </div>
 </template>
@@ -64,6 +64,7 @@ export default {
   margin-bottom: auto;
   top: 0;
   bottom: 0;
+  height: 40%;
 }
 
 .header-picture {
@@ -91,6 +92,16 @@ export default {
   }
   .p-style {
     font-size: 20px;
+  }
+
+  .shapes {
+    height: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .shapes {
+    height: 20%;
   }
 }
 </style>
