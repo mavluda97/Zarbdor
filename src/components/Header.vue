@@ -2,8 +2,8 @@
   <div class="header-container pa-15" id="main">
     <div class="ma-15 d-flex justify-end">
       <img
-        src="../assets/rasm.png"
-        alt="rasm"
+        src="../assets/only.png"
+        alt="pic"
         height="100%"
         width="100%"
         class="header-picture"

@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="ma-15 d-flex justify-end">
-      <img src="../assets/rasm.png" alt="rasm" height="100%" width="100%" />
+      <img src="../assets/only.png" alt="pic" height="100%" width="100%" />
     </div>
   </div>
 </template>

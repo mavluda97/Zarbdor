@@ -11,12 +11,12 @@
           <v-col v-for="instruction in Instructions" :key="instruction" cols="12" md="4">
             <div class="instruction-cards">
               <div class="rounded-cards">
-                <img src="../assets/image6.png" alt="" />
+                <img :src="instruction.img" alt="" />
               </div>
             </div>
             <div class="instruction-txt">
               <div>
-                {{ instruction }}
+                {{ instruction.name }}
               </div>
             </div>
           </v-col>
@@ -33,9 +33,18 @@ export default {
   data() {
     return {
       Instructions: [
-        "1. Muammoni suratga oling!",
-        "2. Rasmga olingan fotoga izoh qoldiring.",
-        "3. Natijalarni kuzatib boring",
+        {
+          img: "../assets/image6.png",
+          name: "1. Muammoni suratga oling!",
+        },
+        {
+          img: "../assets/image7.png",
+          name: "2. Rasmga olingan fotoga izoh qoldiring.",
+        },
+        {
+          img: "../assets/image8.png",
+          name: "3. Natijalarni kuzatib boring",
+        },
       ],
     };
   },
