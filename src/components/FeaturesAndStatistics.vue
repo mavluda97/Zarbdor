@@ -164,23 +164,50 @@ export default {
   height: 800px;
 }
 
-@media(min-width: 500px)and (max-width:680px){
+@media(min-width: 671px)and (max-width:680px){
+  .outer-container{
+    height: 800px;
+  }
+}
+
+@media(min-width: 636px)and (max-width:670px){
+  .outer-container{
+    height: 850px;
+  }
+}
+
+
+@media(min-width: 501px) and (max-width: 635px){
   .outer-container{
     height: 1000px;
   }
 }
 
-@media(min-width: 321px) and (max-width: 499px){
+@media  (min-width: 408px ) and (max-width: 500px){
   .outer-container{
     height: 1600px;
   }
 }
 
-@media(max-width: 320px){
-  .outer-container{
+
+@media  (min-width: 360px)  and (max-width: 407px){
+    .outer-container{
+    height: 1800px;
+  }
+}
+
+@media  (min-width: 305px)  and (max-width: 359px){
+    .outer-container{
     height: 2000px;
   }
 }
+
+@media  (max-width: 304px){
+    .outer-container{
+    height: 2200px;
+  }
+}
+
 
 
 </style>
