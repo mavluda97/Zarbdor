@@ -18,7 +18,7 @@
       </p>
     </div>
     <div class="ma-15 d-flex justify-center">
-      <img src="../assets/only.png" alt="pic" height="650px" width="400px" />
+      <img src="../assets/only.png" alt="pic" height="100%" width="100%" />
     </div>
   </div>
 </template>
