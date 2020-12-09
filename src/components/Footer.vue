@@ -15,11 +15,6 @@
                         ><strong>IT-Solutions</strong></a
                     >
                 </div>
-                <div>
-                    <a href="tel:+998 (99) 123 45 67"  style="text-decoration:none; color: white">
-                    +998991234567
-                </a>
-                </div>
           </div> 
         </v-flex>
       </v-layout>

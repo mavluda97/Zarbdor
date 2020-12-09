@@ -6,47 +6,139 @@
          </h1>
         </div>
          <div class="results-block">
-            <div class="mobile-res">
-                <div class="results-txt">
-                <div class="res-title">Muammo</div>
-                <p> Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan tozalashga yordam bering  </p>
-                </div>
-                <div style="" class="line"></div>
-                <div class="results-txt">
-                    <div class="res-title">Yechim</div>
-                    <p> - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди  </p>
-                </div>
-            </div>
             <div class="images" >
                 <v-carousel
-                    height="400"
+                    height="100%"
+                    
                     hide-delimiter-background
                     show-arrows
+                    cycle
+                    pa-10
                     >
-                        <v-carousel-item class="d-flex"
+                    <v-carousel-item class="slider-content"
                     >
-                    <img
-                    src="../assets/problem.png"
-                    height="300"
-                    width="300">
-                     <img
-                    src="../assets/result.png"
-                    height="300"
-                    width="300">
-                    </v-carousel-item>
-                    
-                        <v-carousel-item class="d-flex"
+                    <div  class="slider-photos" >     
+                        <div class="results-txt">
+                            <div class="res-title">Muammo</div>
+                            <p> Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan tozalashga yordam bering  </p>
+                        </div>
+                         <div class="ba-image">
+                            <div class="sticker">Before</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                           
+                    <div  class="slider-photos">
+                         <div class="results-txt">
+                            <div class="res-title">Yechim</div>
+                            <p> - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди  </p>
+                        </div>
+                   <div class="ba-image">
+                            <div class="sticker">After</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                  
+                    </v-carousel-item>      
+                      <v-carousel-item class="slider-content"
                     >
-                    <img
-                    src="../assets/image6.png"
-                    height="400"
-                    width="auto">
-                     <img
-                    src="../assets/image7.png"
-                    height="400"
-                    width="auto">
-                    </v-carousel-item>
-                    
+                    <div  class="slider-photos" >     
+                        <div class="results-txt">
+                            <div class="res-title">Muammo</div>
+                            <p> Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan tozalashga yordam bering  </p>
+                        </div>
+                         <div class="ba-image">
+                            <div class="sticker">Before</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                           
+                    <div  class="slider-photos">
+                         <div class="results-txt">
+                            <div class="res-title">Yechim</div>
+                            <p> - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди  </p>
+                        </div>
+                   <div class="ba-image">
+                            <div class="sticker">After</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                  
+                    </v-carousel-item>   
+                      <v-carousel-item class="slider-content"
+                    >
+                    <div  class="slider-photos" >     
+                        <div class="results-txt">
+                            <div class="res-title">Muammo</div>
+                            <p> Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan tozalashga yordam bering  </p>
+                        </div>
+                         <div class="ba-image">
+                            <div class="sticker">Before</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                           
+                    <div  class="slider-photos">
+                         <div class="results-txt">
+                            <div class="res-title">Yechim</div>
+                            <p> - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди  </p>
+                        </div>
+                   <div class="ba-image">
+                            <div class="sticker">After</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                  
+                    </v-carousel-item>   
+                      <v-carousel-item class="slider-content"
+                    >
+                    <div  class="slider-photos" >     
+                        <div class="results-txt">
+                            <div class="res-title">Muammo</div>
+                            <p> Ko'cha muzlab qolgan, yurishga qiynalyabmiz. Iltimos muzlardan tozalashga yordam bering  </p>
+                        </div>
+                         <div class="ba-image">
+                            <div class="sticker">Before</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                           
+                    <div  class="slider-photos">
+                         <div class="results-txt">
+                            <div class="res-title">Yechim</div>
+                            <p> - Мирзо Улугбек туман Ободонлаштириш бошкармаси томонидан Мустакиллик шох кучасидаги пиёдалар йулаги музландан тозаланди  </p>
+                        </div>
+                   <div class="ba-image">
+                            <div class="sticker">After</div>
+                         <img
+                            src="../assets/problem.png"
+                            height="100%"
+                            width="auto">
+                        </div> 
+                    </div>
+                  
+                    </v-carousel-item>                
                 </v-carousel>
             </div>
         </div>
@@ -99,9 +191,11 @@ export default {
     line-height: 25px;
     color: #696969;
     max-width: 300px;
+    padding: auto;
 }
 .images{
-    min-width: 600px;
+    min-width: 100%;
+    margin: 0 auto;
 }
 .line{
     border: 1px solid #CCCCCC; 
@@ -111,6 +205,32 @@ export default {
 .before-after{
     display: flex;
     justify-content: space-between;
+}
+.slider-photos{
+    display: flex;
+    justify-content: space-between;
+}
+.ba-image{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.sticker{
+    width: 100px;
+    height: 40px;
+    background-color: #19D3CC;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    padding-top: 2%;
+    text-align: center;
+
+}
+.slider-content{
+    padding: 10%;
 }
 @media (max-width: 1265px){
 .mobile-res{
@@ -125,11 +245,69 @@ export default {
     margin: 5%;
 }
 .images{
-    min-width: 300px;
+    min-width: 100%;
 }
 .results-txt p{
     font-size: 14px;
-    max-width: 250px;
+}
+.ba-image{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.v-window__prev, .v-window__next{
+    margin: 0;
+}
+.sticker{
+    right: 15px;
+}
+}
+@media (max-width: 700px){
+    .results-block{
+        margin: 5px;
+    }
+.images{
+    min-width: 100%;
+}
+.slider-content{
+    padding: 7% 15%;
+}
+.slider-photos{
+    flex-direction: column;
+}
+.v-window__prev, .v-window__next{
+    margin: 0;
+}
+.v-btn--icon.v-size--default {
+    height: 25px;
+    width: 25px;
+}
+.sticker{
+    right: 18px;
+}
+}
+
+@media (max-width: 400px){
+       .results-block{
+        margin: 5px;
+    }
+.images{
+    min-width: 100%;
+}
+.slider-content{
+    padding: 0 15%;
+}
+.v-window__prev, .v-window__next{
+    margin: 0;
+}
+.v-btn--icon.v-size--default {
+    height: 25px;
+    width: 25px;
+}
+.sticker{
+    right: 18px;
 }
 }
 </style>

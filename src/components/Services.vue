@@ -85,6 +85,9 @@ color: #6E6E6E;
 .v-slide-group__wrapper{
     margin-top: 5px;
 }
+.v-application .pa-15 {
+    padding: 0px!important;
+}
 @media (max-width:1265px) {
 .mx-auto{
     max-width: 100%;
