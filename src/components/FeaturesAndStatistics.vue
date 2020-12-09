@@ -1,4 +1,5 @@
 <template>
+<div class="outer-container">
   <div class="common-container mb-16">
     <div class="up-container pa-5 pb-16">
       <h1 class="text-uppercase display-1 font-weight-bold ma-10 white--text">
@@ -25,6 +26,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -139,6 +141,7 @@ export default {
   .features-icons {
     display: none;
   }
+
 }
 
 @media (min-width: 501px) and (max-width: 850px) {
@@ -153,5 +156,31 @@ export default {
     height: 600px;
     grid-template-columns: auto;
   }
+  
 }
+
+
+.outer-container{
+  height: 800px;
+}
+
+@media(min-width: 500px)and (max-width:680px){
+  .outer-container{
+    height: 1000px;
+  }
+}
+
+@media(min-width: 321px) and (max-width: 499px){
+  .outer-container{
+    height: 1600px;
+  }
+}
+
+@media(max-width: 320px){
+  .outer-container{
+    height: 2000px;
+  }
+}
+
+
 </style>

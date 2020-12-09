@@ -1,8 +1,9 @@
 <template>
     <div class="container">
-        <div class="title"
-        left>
-            Natija
+        <div>
+            <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+           Natija
+         </h1>
         </div>
          <div class="results-block">
             <div class="mobile-res">

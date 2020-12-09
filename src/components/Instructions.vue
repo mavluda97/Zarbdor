@@ -1,8 +1,11 @@
 <template>
     <div class="container"> 
-        <div class="title"
-        left>
-        Qo'llanma
+        <div>
+        
+        <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+          Qo'llanma
+         </h1>
+
         </div>
            <v-item-group>
       <v-container>
