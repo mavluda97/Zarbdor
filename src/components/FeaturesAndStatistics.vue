@@ -67,11 +67,11 @@ export default {
       },
 
       datas: {
-        Problems: 76,
-        Viewed: 3,
-        Solved: 43,
-        Rejected: 16,
-        Average: 14,
+        Problems: 0,
+        Viewed: 0,
+        Solved: 0,
+        Rejected: 0,
+        Average: 0,
       },
     };
   },
