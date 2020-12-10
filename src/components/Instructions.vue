@@ -1,25 +1,22 @@
 <template>
   <div class="container" id="guide">
     <div>
-      <h1
-        class="text-uppercase display-1 font-weight-bold ma-5"
-        style="color: #19d3cc"
-      >
+      <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
         Qo'llanma
       </h1>
     </div>
     <v-item-group>
       <v-container>
         <v-row>
-          <v-col v-for="i in Instructions" :key="i.index" cols="12" md="4">
+          <v-col v-for="i in Instructions" :key="i" cols="12" md="4">
             <div class="instruction-cards">
               <div class="rounded-cards">
-                <img src="../assets/pic1.png" alt="pic" />
+                <img :src="require(`@/assets/${i.img}`)" alt="pic" />
               </div>
             </div>
             <div class="instruction-txt">
               <div>
-                {{ i[0] }}
+                {{ i.name }}
               </div>
             </div>
           </v-col>
@@ -35,11 +32,20 @@ export default {
 
   data() {
     return {
-      Instructions: {
-        one: ["1.Muammoni suratga oling!", "../assets/pic1.png"],
-        two: ["2.Rasmga olingan fotoga izoh qoldiring.", "../assets/pic2.png"],
-        three: ["3.Natijalarni kuzatib boring", "../assets/pic3.png"],
-      },
+      Instructions: [
+        {
+          img: "pic1.png",
+          name: "1. Muammoni suratga oling!",
+        },
+        {
+          img: "pic2.png",
+          name: "2. Rasmga olingan fotoga izoh qoldiring.",
+        },
+        {
+          img: "pic3.png",
+          name: "3. Natijalarni kuzatib boring",
+        },
+      ],
     };
   },
 };
@@ -75,7 +81,7 @@ export default {
   margin: 0 auto;
 }
 .rounded-cards img {
-  height: 233px;
+  height: 300px;
   margin: 0 auto;
 }
 .instruction-txt {
@@ -92,7 +98,7 @@ export default {
     height: 227px;
   }
   .rounded-cards img {
-    height: 133px;
+    height: 215px;
   }
 }
 </style>

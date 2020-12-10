@@ -1,27 +1,14 @@
 <template>
   <div v-if="slides.length > 0" class="container">
     <div>
-      <h1
-        class="text-uppercase display-1 font-weight-bold ma-5"
-        style="color: #19d3cc"
-      >
+      <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
         Natija
       </h1>
     </div>
     <div class="results-block">
       <div class="images">
-        <v-carousel
-          height="100%"
-          hide-delimiter-background
-          show-arrows
-          cycle
-          pa-10
-        >
-          <v-carousel-item
-            v-for="slide in slides"
-            :key="slide.id"
-            class="slider-content"
-          >
+        <v-carousel height="100%" hide-delimiter-background show-arrows cycle pa-10>
+          <v-carousel-item v-for="slide in slides" :key="slide.id" class="slider-content">
             <div class="slider-photos">
               <div class="results-txt">
                 <div class="res-title">Muammo</div>
@@ -30,7 +17,7 @@
                 </p>
               </div>
               <div class="ba-image">
-                <div class="sticker">Before</div>
+                <div class="sticker">Muammo</div>
                 <v-img
                   :src="slide.comments[0].image.imageUrl"
                   :lazy-src="base_url + slide.comments[0].image.imageUrl"
@@ -49,7 +36,7 @@
                 </p>
               </div>
               <div class="ba-image">
-                <div class="sticker">After</div>
+                <div class="sticker">Yechim</div>
                 <v-img
                   :src="base_url + slide.comments[1].image.imageUrl"
                   height="100%"
