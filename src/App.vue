@@ -43,6 +43,10 @@ export default {
     Results,
     Footer,
   },
+  
+  created(){
+        document.title = "Obod-Zarbdor"
+  },
 
   data() {
     return {};
