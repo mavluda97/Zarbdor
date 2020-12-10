@@ -1,7 +1,7 @@
 <template>
   <div v-if="slides.length > 0" class="container">
     <div>
-      <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+      <h1 class="text-uppercase headline font-weight-bold ma-5" style="color: #19d3cc">
         {{$t('Natija')}}
       </h1>
     </div>

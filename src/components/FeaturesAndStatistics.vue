@@ -1,8 +1,8 @@
 <template>
-  <div class="outer-container" id="features">
+  <div id="features">
     <div class="common-container mb-16">
       <div class="up-container pa-5 pb-16">
-        <h1 class="text-uppercase display-1 font-weight-bold ma-10 white--text">
+        <h1 class="text-uppercase headline font-weight-bold ma-10 white--text">
           {{$t('Afzalliklar')}}
         </h1>
         <div class="feature-container ma-10">
@@ -130,23 +130,17 @@ export default {
 }
 
 .down-container {
-  border: 2px solid #3d3d3d;
-  border-radius: 20px;
   height: 160px;
-  width: 800px;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  column-gap: 15px;
-  justify-content: space-around;
+  column-gap: 20px;
+  justify-content: space-evenly;
   align-content: center;
-  position: absolute;
-  top: 93%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
   text-align: center;
   background-color: #3d3d3d;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (max-width: 1100px) {
@@ -175,81 +169,22 @@ export default {
   }
 }
 
-@media (min-width: 501px) and (max-width: 850px) {
-  .down-container {
-    width: 500px;
-  }
-}
 
-@media (max-width: 500px) {
+
+@media (max-width: 715px) {
   .down-container {
-    width: 100%;
-    height: 600px;
+    height: 550px;
     grid-template-columns: auto;
   }
 }
 
-.outer-container {
-  height: 900px;
-}
 
-@media (min-width: 671px) and (max-width: 680px) {
-  .outer-container {
-    height: 850px;
-  }
-}
 
-@media (min-width: 636px) and (max-width: 670px) {
-  .outer-container {
-    height: 900px;
-  }
-}
 
-@media (min-width: 542px) and (max-width: 635px) {
-  .outer-container {
-    height: 1000px;
-  }
-}
 
-@media (min-width: 501px) and (max-width: 541px) {
-  .outer-container {
-    height: 1100px;
-  }
-}
 
-@media (min-width: 409px) and (max-width: 500px) {
-  .outer-container {
-    height: 1620px;
-  }
-}
 
-@media (min-width: 377px) and (max-width: 408px) {
-  .outer-container {
-    height: 1800px;
-  }
-}
 
-@media (min-width: 345px) and (max-width: 376px) {
-  .outer-container {
-    height: 2000px;
-  }
-}
 
-@media (min-width: 302px) and (max-width: 344px) {
-  .outer-container {
-    height: 2200px;
-  }
-}
 
-@media (max-width: 301px) {
-  .outer-container {
-    height: 2420px;
-  }
-}
-
-@media (max-width: 285px) {
-  .outer-container {
-    height: 2500px;
-  }
-}
 </style>

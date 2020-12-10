@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="guide">
     <div>
-      <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
+      <h1 class="text-uppercase headline font-weight-bold " style="color: #19d3cc">
         {{$t('Qollanma')}}
       </h1>
     </div>

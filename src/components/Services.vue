@@ -1,7 +1,7 @@
 <template >
   <div class="service-container pa-15">
     <h1
-      class="text-uppercase display-1 font-weight-bold ma-16"
+      class="text-uppercase headline font-weight-bold ma-16"
       style="color: #19d3cc"
     >
       {{$t('Hizmat turlari')}}
