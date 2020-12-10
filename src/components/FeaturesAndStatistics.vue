@@ -3,7 +3,7 @@
     <div class="common-container mb-16">
       <div class="up-container pa-5 pb-16">
         <h1 class="text-uppercase display-1 font-weight-bold ma-10 white--text">
-          Afzalliklar
+          {{$t('Afzalliklar')}}
         </h1>
         <div class="feature-container ma-10">
           <div
@@ -15,10 +15,10 @@
               value[2]
             }}</v-icon>
             <h3 class="mx-5 white--text font-weight-bold">
-              {{ value[0] }}
+              {{ $t(value[0]) }}
             </h3>
             <p class="ma-5 white--text">
-              {{ value[1] }}
+              {{ $t(value[1]) }}
             </p>
           </div>
         </div>
@@ -45,23 +45,23 @@ export default {
       base: process.env.VUE_APP_BASE_URL,
       Features: {
         one: [
-          "Muammoning tezkor yechimi",
-          "Ushbu ilova orqali fuqarolar o'z murojaatlarini tez va oson yo'llaydilar. Qisqa muddat ichida muammolar hal qilinadi",
+          "birinchi-afzal",
+          "bir-afzal-def",
           "mdi-laptop-mac",
         ],
         two: [
-          "Mutasaddi tashkilotlar bilan to'g'ridan to'g'ri muloqot",
-          "Fuqarolarning murojaatlari to'g'ridan to'g'ri mutassadi tashkilotlarga yuboriladi va ular zudlik bilan mazkur muammolar yechimi bilan shug'ullanadilar. ",
+          "ikkinchi-afzal",
+          "ikki-afzal-def",
           "mdi-laptop-mac",
         ],
         three: [
-          "Muammolar yechilishi ustidan online nazorat",
-          "Fuqarolar nafaqat o'z murojatlarini yuborishi, balki endilikda ular ham muammolarning hal bo'lish jarayonini online nazorat qila olashi mumkin",
+          "uchinchi-afzal",
+          "uch-afzal-def",
           "mdi-laptop-mac",
         ],
         four: [
-          "Murojaatlarni yetqazish uchun qulay tizim",
-          "Ushbu ilova orqali murojaatlarning yuborilishi juda qulay bo'lganligi uchun fuqarolar endi hech qanday navbat kutmaydilar, ortiqcha ovoragarchiliklar ularni be'zovta qilmaydi.",
+          "tortinchi-afzal",
+          "tort-afzal-def",
           "mdi-laptop-mac",
         ],
       },
@@ -117,7 +117,7 @@ export default {
 .feature-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 400px;
+  grid-template-rows: 410px;
   column-gap: 20px;
 }
 
@@ -136,6 +136,7 @@ export default {
   width: 800px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  column-gap: 15px;
   justify-content: space-around;
   align-content: center;
   position: absolute;
@@ -218,7 +219,7 @@ export default {
 
 @media (min-width: 409px) and (max-width: 500px) {
   .outer-container {
-    height: 1600px;
+    height: 1620px;
   }
 }
 
@@ -230,19 +231,19 @@ export default {
 
 @media (min-width: 345px) and (max-width: 376px) {
   .outer-container {
-    height: 1900px;
+    height: 2000px;
   }
 }
 
 @media (min-width: 302px) and (max-width: 344px) {
   .outer-container {
-    height: 2100px;
+    height: 2200px;
   }
 }
 
 @media (max-width: 301px) {
   .outer-container {
-    height: 2400px;
+    height: 2420px;
   }
 }
 

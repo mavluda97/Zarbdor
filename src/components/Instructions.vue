@@ -2,7 +2,7 @@
   <div class="container" id="guide">
     <div>
       <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
-        Qo'llanma
+        {{$t('Qollanma')}}
       </h1>
     </div>
     <v-item-group>
@@ -16,7 +16,7 @@
             </div>
             <div class="instruction-txt">
               <div>
-                {{ i.name }}
+                {{ $t(i.name) }}
               </div>
             </div>
           </v-col>
@@ -35,15 +35,15 @@ export default {
       Instructions: [
         {
           img: "pic1.png",
-          name: "1. Muammoni suratga oling!",
+          name: "guide-1",
         },
         {
           img: "pic2.png",
-          name: "2. Rasmga olingan fotoga izoh qoldiring.",
+          name: "guide-2",
         },
         {
           img: "pic3.png",
-          name: "3. Natijalarni kuzatib boring",
+          name: "guide-3",
         },
       ],
     };

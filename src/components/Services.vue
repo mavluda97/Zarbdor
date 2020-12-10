@@ -4,7 +4,7 @@
       class="text-uppercase display-1 font-weight-bold ma-16"
       style="color: #19d3cc"
     >
-      Hizmat turlari
+      {{$t('Hizmat turlari')}}
     </h1>
 
     <v-sheet class="mx-auto" max-width="100%" height="auto">
@@ -23,7 +23,7 @@
               pt-15
               style="margin: 0 auto"
             ></v-img>
-            <div class="service-name" centered>{{ n }}</div>
+            <div class="service-name" centered>{{ $t(n) }}</div>
           </v-card>
         </v-slide-item>
       </v-slide-group>
@@ -39,7 +39,7 @@ export default {
       Services: [
         "Soliq hizmati",
         "Kadastr muammosi",
-        "Garaj muammosi",
+        "Gaz muammosi",
         "Ko'chalarni yoritish",
         "Aloqa tarmog’i",
         "Sanitariya va gigiyena",

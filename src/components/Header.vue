@@ -14,15 +14,14 @@
         class="white--text font-weight-bold h1-style"
         style="position: relative; z-index: 33"
       >
-        <span class="text-uppercase">Obod-zarbdor</span><br />
-        loyihasi
+        <span>{{$t('Obod-zarbdor')}}</span><br />
+        {{$t('loyihasi')}}
       </h1>
       <p
         style="color: #2b85c5; position: relative; z-index: 32"
         class="mt-10 mb-10 p-style"
       >
-        Sizning muammo va takliflaringizni Zarbdor tuman hokimiyatiga yetkazishga va uning
-        yechimini topishga mo’ljallangan
+        {{$t('definition')}}
       </p>
       <v-btn
         style="position: relative; z-index: 34"

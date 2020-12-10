@@ -2,7 +2,7 @@
   <div v-if="slides.length > 0" class="container">
     <div>
       <h1 class="text-uppercase display-1 font-weight-bold ma-5" style="color: #19d3cc">
-        Natija
+        {{$t('Natija')}}
       </h1>
     </div>
     <div class="results-block">
@@ -11,13 +11,13 @@
           <v-carousel-item v-for="slide in slides" :key="slide.id" class="slider-content">
             <div class="slider-photos">
               <div class="results-txt">
-                <div class="res-title">Muammo</div>
+                <div class="res-title">{{$t('Muammo')}}</div>
                 <p>
                   {{ slide.comments[0].text }}
                 </p>
               </div>
               <div class="ba-image">
-                <div class="sticker">Muammo</div>
+                <div class="sticker">{{$t('Muammo')}}</div>
                 <v-img
                   :src="slide.comments[0].image.imageUrl"
                   :lazy-src="base_url + slide.comments[0].image.imageUrl"
@@ -30,13 +30,13 @@
 
             <div class="slider-photos">
               <div class="results-txt">
-                <div class="res-title">Yechim</div>
+                <div class="res-title">{{$t('Yechim')}}</div>
                 <p>
                   {{ slide.comments[1].text }}
                 </p>
               </div>
               <div class="ba-image">
-                <div class="sticker">Yechim</div>
+                <div class="sticker">{{$t('Yechim')}}</div>
                 <v-img
                   :src="base_url + slide.comments[1].image.imageUrl"
                   height="100%"
