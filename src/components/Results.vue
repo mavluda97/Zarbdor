@@ -130,12 +130,13 @@ export default {
 .slider-photos {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 .ba-image {
   width: 350px;
   height: 300px;
   position: relative;
-  margin: 0 auto;
   margin-bottom: 10px;
   z-index: 444;
 }
