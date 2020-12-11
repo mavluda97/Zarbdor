@@ -3,14 +3,10 @@
     <div class="common-container mb-16">
       <div class="up-container pa-5 pb-16">
         <h1 class="text-uppercase headline font-weight-bold ma-10 white--text">
-          {{$t('Afzalliklar')}}
+          {{ $t("Afzalliklar") }}
         </h1>
         <div class="feature-container ma-10">
-          <div
-            v-for="value in Features"
-            :key="value.index"
-            class="feature-lists"
-          >
+          <div v-for="value in Features" :key="value.index" class="feature-lists">
             <v-icon class="ma-5 white--text features-icons" x-large>{{
               value[2]
             }}</v-icon>
@@ -44,26 +40,10 @@ export default {
     return {
       base: process.env.VUE_APP_BASE_URL,
       Features: {
-        one: [
-          "birinchi-afzal",
-          "bir-afzal-def",
-          "mdi-laptop-mac",
-        ],
-        two: [
-          "ikkinchi-afzal",
-          "ikki-afzal-def",
-          "mdi-laptop-mac",
-        ],
-        three: [
-          "uchinchi-afzal",
-          "uch-afzal-def",
-          "mdi-laptop-mac",
-        ],
-        four: [
-          "tortinchi-afzal",
-          "tort-afzal-def",
-          "mdi-laptop-mac",
-        ],
+        one: ["birinchi-afzal", "bir-afzal-def", "mdi-laptop-mac"],
+        two: ["ikkinchi-afzal", "ikki-afzal-def", "mdi-laptop-mac"],
+        three: ["uchinchi-afzal", "uch-afzal-def", "mdi-laptop-mac"],
+        four: ["tortinchi-afzal", "tort-afzal-def", "mdi-laptop-mac"],
       },
 
       datas: {
@@ -169,22 +149,10 @@ export default {
   }
 }
 
-
-
 @media (max-width: 715px) {
   .down-container {
     height: 550px;
     grid-template-columns: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
 </style>

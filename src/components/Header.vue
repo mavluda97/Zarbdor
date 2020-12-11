@@ -14,17 +14,18 @@
         class="white--text font-weight-bold h1-style"
         style="position: relative; z-index: 33"
       >
-        <span>{{$t('Obod-zarbdor')}}</span><br />
-        {{$t('loyihasi')}}
+        <span>{{ $t("Obod-zarbdor") }}</span
+        ><br />
+        {{ $t("loyihasi") }}
       </h1>
       <p
         style="color: #2b85c5; position: relative; z-index: 32"
         class="mt-10 mb-10 p-style"
       >
-        {{$t('definition')}}
+        {{ $t("definition") }}
       </p>
       <v-btn
-        style="position: relative; z-index: 34"
+        style="position: relative; z-index: 34; display: none"
         x-large
         rounded
         color="#2B85C5"
@@ -101,6 +102,12 @@ export default {
 @media (max-width: 550px) {
   .shapes {
     height: 20%;
+  }
+}
+
+@media (max-width: 450px) {
+  .p-style {
+    font-size: 16px;
   }
 }
 </style>

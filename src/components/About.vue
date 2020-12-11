@@ -2,14 +2,14 @@
   <div class="about-container" id="about">
     <div class="ma-10">
       <h1 class="text-uppercase headline font-weight-bold ma-5" style="color: #19d3cc">
-         {{$t('Loyiha haqida')}}
+        {{ $t("Loyiha haqida") }}
       </h1>
       <p class="mx-5 mt-15 headline" style="color: #3d3d3d">
-        {{$t('About-definition')}}
+        {{ $t("About-definition") }}
       </p>
     </div>
     <div class="ma-15 d-flex justify-center">
-      <img src="../assets/only.png" alt="pic"  class="about-image" />
+      <img src="../assets/only.png" alt="pic" class="about-image" />
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   grid-template-columns: auto auto;
 }
 
-.about-image{
+.about-image {
   height: 100%;
   width: 100%;
 }
@@ -40,19 +40,16 @@ export default {
     justify-content: center;
   }
 
-  .about-image{
-    height: 85% ;
-    width: 50% ;
+  .about-image {
+    height: 85%;
+    width: 50%;
   }
 }
 
 @media (max-width: 560px) {
- 
-  .about-image{
-     height: 100%;
-     width: 100%;  
+  .about-image {
+    height: 100%;
+    width: 100%;
   }
 }
-
-
 </style>

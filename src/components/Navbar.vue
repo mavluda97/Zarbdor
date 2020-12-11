@@ -9,19 +9,13 @@
     <div class="navbar-links" v-bind:class="{ active: isActive }">
       <ul>
         <li>
-          <a href="#main" @click.prevent="navbarLinkClick()">{{
-            $t("main")
-          }}</a>
+          <a href="#main" @click.prevent="navbarLinkClick()">{{ $t("main") }}</a>
         </li>
         <li>
-          <a href="#about" @click.prevent="navbarLinkClick()">{{
-            $t("about")
-          }}</a>
+          <a href="#about" @click.prevent="navbarLinkClick()">{{ $t("about") }}</a>
         </li>
         <li>
-          <a href="#features" @click.prevent="navbarLinkClick()">{{
-            $t("features")
-          }}</a>
+          <a href="#features" @click.prevent="navbarLinkClick()">{{ $t("features") }}</a>
         </li>
         <li>
           <a href="#features" @click.prevent="navbarLinkClick()">{{
@@ -29,22 +23,20 @@
           }}</a>
         </li>
         <li>
-          <a href="#guide" @click.prevent="navbarLinkClick()">{{
-            $t("guide")
-          }}</a>
+          <a href="#guide" @click.prevent="navbarLinkClick()">{{ $t("guide") }}</a>
         </li>
         <li>
-          <v-btn
-            rounded
-            color="#2B85C5"
-            class="white--text ma-2 text-capitalize"
-            >{{ $t("Login") }}</v-btn
-          >
+          <a href="https://portal.obod-zarbdor.uz/" target="_blank" class="pa-0">
+            <v-btn
+              rounded
+              color="#2B85C5"
+              class="ma-2 white--text text-capitalize font-weight-bold"
+              >{{ $t("Login") }}</v-btn
+            >
+          </a>
         </li>
         <li class="lang">
-          <a href="#" @click="setLocale('uz')">Uz</a>|<a
-            href="#"
-            @click="setLocale('ru')"
+          <a href="#" @click="setLocale('uz')">Uz</a>|<a href="#" @click="setLocale('ru')"
             >Ru</a
           >
         </li>
@@ -164,7 +156,7 @@ export default {
   justify-content: center;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1180px) {
   .toggle-button {
     display: block;
   }

@@ -1,14 +1,14 @@
 <template>
   <div class="container" id="guide">
     <div>
-      <h1 class="text-uppercase headline font-weight-bold " style="color: #19d3cc">
-        {{$t('Qollanma')}}
+      <h1 class="text-uppercase headline font-weight-bold" style="color: #19d3cc">
+        {{ $t("Qollanma") }}
       </h1>
     </div>
     <v-item-group>
       <v-container>
         <v-row>
-          <v-col v-for="i in Instructions" :key="i" cols="12" md="4">
+          <v-col v-for="i in Instructions" :key="i.index" cols="12" md="4">
             <div class="instruction-cards">
               <div class="rounded-cards">
                 <img :src="require(`@/assets/${i.img}`)" alt="pic" />
