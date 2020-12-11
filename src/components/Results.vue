@@ -138,7 +138,7 @@ export default {
   height: 300px;
   position: relative;
   margin-bottom: 10px;
-  z-index: 444;
+ 
 }
 .sticker {
   width: 100px;
@@ -150,6 +150,7 @@ export default {
   right: 0px;
   padding-top: 2%;
   text-align: center;
+   z-index: 444;
 }
 .slider-content {
   padding: 10%;
