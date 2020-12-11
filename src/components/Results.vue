@@ -38,7 +38,7 @@
               <div class="ba-image">
                 <div class="sticker">{{ $t("Yechim") }}</div>
                 <v-img
-                  :src="base_url + slide.comments[1].image.imageUrl"
+                  :src="slide.comments[1].image.imageUrl"
                   :lazy-src="base_url + slide.comments[1].image.imageUrl"
                   height="100%"
                   width="auto"
