@@ -39,8 +39,10 @@
                 <div class="sticker">{{ $t("Yechim") }}</div>
                 <v-img
                   :src="base_url + slide.comments[1].image.imageUrl"
+                  :lazy-src="base_url + slide.comments[1].image.imageUrl"
                   height="100%"
                   width="auto"
+                  :alt="slide.comments[1].image.imageUrl"
                 />
               </div>
             </div>
@@ -135,6 +137,7 @@ export default {
   position: relative;
   margin: 0 auto;
   margin-bottom: 10px;
+  z-index: 444;
 }
 .sticker {
   width: 100px;
@@ -173,6 +176,7 @@ export default {
     height: 200px;
     position: relative;
     margin-bottom: 10px;
+
   }
 
   .v-window__prev,
