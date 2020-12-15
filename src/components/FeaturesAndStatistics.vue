@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="down-container pa-5">
+      <div class="down-container pa-5" id="statistika">
         <div v-for="(value, name) in datas" :key="name.index">
           <p class="display-2 white--text text-center">{{ value }}</p>
           <p class="white--text text-center font-weight-light">

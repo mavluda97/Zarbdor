@@ -18,7 +18,7 @@
           <a href="#features" @click.prevent="navbarLinkClick()">{{ $t("features") }}</a>
         </li>
         <li>
-          <a href="#features" @click.prevent="navbarLinkClick()">{{
+          <a href="#statistika" @click.prevent="navbarLinkClick()">{{
             $t("statistics")
           }}</a>
         </li>
