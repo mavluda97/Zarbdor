@@ -185,8 +185,8 @@ export default {
   .v-window__next {
     margin: 0;
   }
-  .sticker {
-    right: 15px;
+  .sticker{
+     font-size: 16px;
   }
 }
 @media (max-width: 700px) {
@@ -210,8 +210,8 @@ export default {
     height: 25px;
     width: 25px;
   }
-  .sticker {
-    right: 18px;
+  .sticker{
+     font-size: 16px;
   }
 }
 
@@ -223,18 +223,25 @@ export default {
     min-width: 100%;
   }
   .slider-content {
-    padding: 0 15%;
+    padding: 15% 5%;
   }
-  .v-window__prev,
+  .v-window__prev{
+    margin: 0;
+    left: -10px;
+  }
   .v-window__next {
     margin: 0;
+    right: -15px;
   }
   .v-btn--icon.v-size--default {
     height: 25px;
     width: 25px;
   }
   .sticker {
-    right: 18px;
+      right: 40px;
+      width: 90px;
+      height: 33px;
+      font-size: 16px;
   }
 }
 </style>
