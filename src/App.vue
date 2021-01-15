@@ -16,6 +16,11 @@
 </template>
 
 <script>
+window.replainSettings = { id: '0d714563-bb94-4f5e-8420-e7f7a12fdcbe' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+
 // Mavluda part
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
