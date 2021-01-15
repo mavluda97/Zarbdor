@@ -25,8 +25,8 @@
         <li>
           <a href="#guide" @click.prevent="navbarLinkClick()">{{ $t("guide") }}</a>
         </li>
-        <li>
-          <a href="https://portal.obod-zarbdor.uz/" target="_blank" class="pa-0">
+        <li v-if='false'>
+          <a href="#" target="_blank" class="pa-0">
             <v-btn
               rounded
               color="#2B85C5"
